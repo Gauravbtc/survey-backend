@@ -1,0 +1,23 @@
+default: &default
+  adapter: postgresql
+  encoding: UTF8
+  pool: 500
+  username: gaurav
+  password: gaurav
+  pool: 5
+development:
+  <<: *default
+  host: localhost
+  database: survey_backend_development
+  port: 5432
+
+test:
+  <<: *default
+  host: localhost
+  database: survey_backend_test
+
+production:
+  <<: *default
+  database: survey_backend_production
+  username: survey_backend
+  password: <%= ENV['SURVEY_BACKEND_DATABASE_PASSWORD'] %>

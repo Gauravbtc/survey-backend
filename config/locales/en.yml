@@ -1,0 +1,22 @@
+en:
+  users:
+    registration_done: "Registration done"
+    errors: "Error occured during %{msg}"
+    registration_required_fields: "Email, Password and password confirmations are required"
+    login_success: "Login successfully"
+    invalid_auth_token: "Auth token is invalid or missing"
+    signout_success: "Signout successfully"
+    invalid_login: "invalid Email or Password"
+    required_login: "Email and Password are required"
+  survey:
+    created: "Survey has been created"
+    updated: "Survey updated successfully"
+    deleted: "Survey deleted successfully"
+    errors: "Error Occured During Survey %{msg}"
+    show: "Survey details"
+    list:  "Survey list"
+  participant:
+    created: "participant has been created"
+    survey_results_created: "Survey Results created"
+    errors: "Error Occured During Survey %{msg}"
+    qustion_ans_list: "Survey Results"
