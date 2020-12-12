@@ -1,24 +1,61 @@
-# README
+# Survey Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+It's a survey web application which allows user to create surveys and share survey forms to the targeted audience. 
 
-Things you may want to cover:
+It's used RectJs as front-end and Rails as back-end. 
 
-* Ruby version
+This project only contain API only to download front-end follow installation steps. 
+ 
+## Installation
 
-* System dependencies
+Step 1: Download front-end application 
 
-* Configuration
 
-* Database creation
+```bash
+git clone https://github.com/Gauravbtc/survey-frontend.git
+```
 
-* Database initialization
+Step 2: Download back-end application 
 
-* How to run the test suite
+```bash
+git clone https://github.com/Gauravbtc/survey-backend.git
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Step 3: Go to the front-end project directory and execute below cmd
 
-* Deployment instructions
+```bash
+npm install
+```
 
-* ...
+Step 4: Go to the back-end project directory and Install requires RVM for ruby 2.7.2
+
+
+Step 5: Rename sample_databse.yml to database.yml and put your database credentials
+
+Step 6: Rename sample_secrets.yml to secrets.yml and place your react application host URL
+
+
+Step 7: Do bundle install
+
+```bash
+bundle install
+```
+
+Step 8: Create a database and run migrations
+
+```bash
+rails db:create
+rails db:migrate
+```
+
+Step 9: Run Rails Server 
+
+```bash
+ rails s -p 3005
+```
+
+
+### Go to react application host 
+
+http://localhost:3000
+
