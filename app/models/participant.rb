@@ -7,6 +7,7 @@ class Participant < ApplicationRecord
   def self.survey_results_json(participant)
     survey_results_hash = {}
     participant_survey = self.includes(:survey_results, :survey).find_by(id: participant.id)
+    survey_results_hash["participant_id"] = participant.id
     survey_results_hash["name"] = participant_survey.name
     survey_results_hash["email"] = participant_survey.email
     survey_results_hash["survey_id"] = participant.survey_id
